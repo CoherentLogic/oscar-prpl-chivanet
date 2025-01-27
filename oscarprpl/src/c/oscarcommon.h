@@ -32,13 +32,13 @@
 #include "notify.h"
 #include "status.h"
 
-#define AIM_DEFAULT_LOGIN_SERVER "login.oscar.nina.chat"
-#define AIM_ALT_LOGIN_SERVER "login.messaging.aol.com"
-#define AIM_DEFAULT_SSL_LOGIN_SERVER "slogin.oscar.nina.chat"
-#define ICQ_DEFAULT_LOGIN_SERVER "login.oscar.nina.chat"
-#define ICQ_DEFAULT_SSL_LOGIN_SERVER "slogin.oscar.nina.chat"
+#define AIM_DEFAULT_LOGIN_SERVER "aim.chivanet.org"
+#define AIM_ALT_LOGIN_SERVER "aim.chivanet.org"
+#define AIM_DEFAULT_SSL_LOGIN_SERVER "aim.chivanet.org"
+#define ICQ_DEFAULT_LOGIN_SERVER "aim.chivanet.org"
+#define ICQ_DEFAULT_SSL_LOGIN_SERVER "aim.chivanet.org"
 
-#define AIM_DEFAULT_KDC_SERVER "kdc.uas.nina.chat"
+#define AIM_DEFAULT_KDC_SERVER ""
 #define AIM_DEFAULT_KDC_PORT 443
 
 /*
@@ -72,8 +72,8 @@
 #define OSCAR_DEFAULT_WEB_AWARE FALSE
 #define OSCAR_DEFAULT_ALWAYS_USE_RV_PROXY FALSE
 #define OSCAR_DEFAULT_ALLOW_MULTIPLE_LOGINS TRUE
-#define OSCAR_DEFAULT_LOGIN OSCAR_CLIENT_LOGIN
-#define OSCAR_DEFAULT_ENCRYPTION OSCAR_NO_ENCRYPTION // TEMP: Update when NINA gets slogin
+#define OSCAR_DEFAULT_LOGIN OSCAR_MD5_LOGIN
+#define OSCAR_DEFAULT_ENCRYPTION OSCAR_NO_ENCRYPTION 
 
 #ifdef _WIN32
 const char *oscar_get_locale_charset(void);
